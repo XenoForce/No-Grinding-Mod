@@ -1,0 +1,7 @@
+name: no-grinding
+displayName: No Grinding
+author: XenoForce
+description: Grind a lot less in the game.
+version: "1.0.1"
+minGameVersion: "136"
+dependencies: []

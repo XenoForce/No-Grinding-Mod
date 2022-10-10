@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: Tungsten Source
+description: Tungsten Source
+
+health: 99000
+itemCapacity: 50
+
+outputItem: {
+  item: tungsten
+  amount: 90
+}
+
+size: 1
+
+hasPower: false
+hasLiquids: false
+hasItems: true
+craftTime: 1
+
+consumes: {
+}
+
+requirements: []
+buildCostMultiplier: 0.1
+
+category: crafting
+
+research: {
+  parent: beryllium-source
+  requirements: [ tungsten/10 ]
+}

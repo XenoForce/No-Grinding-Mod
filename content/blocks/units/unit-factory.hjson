@@ -1,0 +1,24 @@
+type: UnitFactory
+name: Unit Factory (No Grinding)
+description: Unit Factory (No Grinding)
+
+health: 99000
+size: 3
+itemCapacity: 30
+
+consumes: {}
+
+plans: [
+	{ unit: poly-x     , time: 90, requirements: [] }
+	{ unit: mega-x     , time: 90, requirements: [] }
+	
+	
+]
+
+requirements: []
+buildCostMultiplier: 0.1
+
+category: units
+research: no-grinding-mod-logo
+
+alwaysUnlocked: true

@@ -1,0 +1,75 @@
+type: flying
+name: "Poly-X"
+            
+defaultCommand: rebuild
+            
+flying: true
+drag: 0.05
+speed: 2.6
+rotateSpeed: 15
+accel: 0.1
+range: 130
+health: 400
+buildSpeed: 9900.0
+engineOffset: 6.5
+hitSize: 9
+lowAltitude: true
+mineTier: 2
+mineSpeed: 3.5
+
+
+abilities: [
+    {
+        type: RepairFieldAbility
+        amount: 5
+        reload: 480
+        range: 50
+    }
+]
+
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 900
+}
+
+
+weapons: [
+{
+    type: Weapon
+    name: poly-x-weapon
+    top: false
+    y: -2.5
+    x: 3.75
+    reload: 30
+    ejectEffect: none
+    recoil: 2
+    shootSound: missile
+    velocityRnd: 0.5
+    inaccuracy: 15
+    alternate: true
+    
+    bullet: {
+        type: MissileBulletType
+        speed: 4
+        damage: 12
+        homingPower: 0.08
+        weaveMag: 4
+        weaveScale: 4
+        lifetime: 50
+        keepVelocity: false
+        shootEffect: shootHeal
+        smokeEffect: hitLaser
+        hitEffect: hitLaser
+        despawnEffect: hitLaser
+        frontColor: ffffff        //white
+        hitSound: none
+        
+        healPercent: 5.5
+        collidesTeam: true
+        backColor: 98ffa9        //heal
+        trailColor: 98ffa9        //heal
+    }
+}]
+
+alwaysUnlocked: true

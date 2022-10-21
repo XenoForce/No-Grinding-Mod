@@ -1,0 +1,72 @@
+type: flying
+name: "Mega-X"
+
+defaultCommand: repair
+
+mineTier: 3
+mineSpeed: 4
+health: 460
+armor: 3
+speed: 2.5
+accel: 0.06
+drag: 0.017
+lowAltitude: true
+flying: true
+engineOffset: 10.5
+faceTarget: false
+hitSize: 16.05
+engineSize: 3
+payloadCapacity: 256        // = (2 * 2) * tilePayload = 4 * 64
+buildSpeed: 2.6
+isEnemy: false
+
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 1100
+}
+
+
+weapons: [
+{
+    type: Weapon
+    name: mega-x-heal-weapon-mount
+    shootSound: lasershoot
+    reload: 24
+    x: 8
+    y: -6
+    rotate: true
+    
+    bullet: {
+        type: LaserBoltBulletType
+        speed: 5.2
+        damage: 10
+        lifetime: 35
+        healPercent: 50
+        collidesTeam: true
+        backColor: 98ffa9        //heal
+        frontColor: ffffff        //white
+    }
+}
+{
+    type: Weapon
+    name: mega-x-heal-weapon-mount
+    shootSound: lasershoot
+    reload: 15
+    x: 4
+    y: 5
+    rotate: true
+    
+    bullet: {
+        type: LaserBoltBulletType
+        speed: 5.2
+        damage: 8
+        lifetime: 35
+        healPercent: 50
+        collidesTeam: true
+        backColor: 98ffa9        //heal
+        frontColor: ffffff        //white
+    }
+}]
+
+alwaysUnlocked: true

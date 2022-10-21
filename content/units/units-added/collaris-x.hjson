@@ -1,0 +1,265 @@
+type: legs
+name: Collaris-X
+            
+outlineColor: 2d2f39        //darkOutline
+
+drag: 0.1
+speed: 1.3
+hitSize: 44
+health: 18000
+armor: 9
+rotateSpeed: 1.6
+lockLegBase: true
+legContinuousMove: true
+legStraightness: 0.6
+baseLegStraightness: 0.5
+
+legCount: 8
+legLength: 30
+legForwardScl: 2.1
+legMoveSpace: 1.05
+rippleScale: 1.2
+stepShake: 0.5
+legGroupSize: 2
+legExtension: -6
+legBaseOffset: 19
+legStraightLength: 0.9
+legMaxLength: 1.2
+
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 2000
+}
+
+
+legSplashDamage: 32
+legSplashRange: 32
+drownTimeMultiplier: 2
+
+hovering: true
+shadowElevation: 0.4
+
+// groundLayer: legUnit
+
+targetAir: false
+
+weapons: [
+{
+    type: Weapon
+    name: collaris-x-weapon
+    shootSound: pulseBlast
+    mirror: true
+    rotationLimit: 30
+    rotateSpeed: 0.4
+    rotate: true
+    
+    x: 12
+    y: -7
+    shootY: 16
+    recoil: 4
+    reload: 130
+    cooldownTime: 156
+    shake: 7
+    layerOffset: 0.02
+    shadow: 10
+    
+    shootStatus: slow
+    shootStatusDuration: 131
+    
+    shoot: {
+      type: ShootSpread
+      shots: 1
+      spread: 0
+    }
+    
+    heatColor: ff0000        //red
+    
+    
+    /*
+    for(int i = 0; i < 5; i++) {
+        int fi = i;
+        parts.add(new RegionPart("-blade"){{
+            under: true
+            layerOffset: -0.001
+            heatColor: 8ca9e8        //techBlue
+            heatProgress: = PartProgress.heat.add( 0.2 ).min( PartProgress.warmup );
+            progress: = PartProgress.warmup.blend( PartProgress.reload, 0.1 );
+            x: 3.375        // = 13.5 / 4
+            y = 10f / 4f - fi * 2f;
+            moveY = 1f - fi * 1f;
+            moveX = fi * 0.3f;
+            moveRot = -45f - fi * 17f;
+            
+            moves.add(new PartMove(PartProgress.reload.inv().mul(1.8f).inv().curve(fi / 5f, 0.2f), 0f, 0f, 36f));
+        }});
+    }
+    */
+    
+    
+    bullet: {
+        type: ArtilleryBulletType
+        speed: 5.5
+        damage: 300
+        collidesTiles: true
+        collides: true
+        lifetime: 75
+        shootEffect: shootBigColor
+        smokeEffect: shootSmokeSquareBig
+        frontColor: ffffff        //white
+        
+        trailEffect: {
+            type: MultiEffect
+            effects: [
+                artilleryTrail
+                artilleryTrailSmoke
+            ]
+        }
+        
+        hitSound: none
+        width: 18
+        height: 24
+        
+        lightColor: 8ca9e8        //techBlue
+        trailColor: 8ca9e8        //techBlue
+        hitColor: 8ca9e8        //techBlue
+        backColor: 8ca9e8        //techBlue
+        
+        lightRadius: 40
+        lightOpacity: 0.7
+        
+        trailWidth: 4.5
+        trailLength: 19
+        trailChance: -1
+        
+        despawnEffect: none
+        despawnSound: dullExplosion
+        
+        hitEffect: {
+            type: ExplosionEffect
+            lifetime: 34
+            waveStroke: 4
+            
+            waveColor: 8ca9e8        //techBlue
+            sparkColor: 8ca9e8        //techBlue
+            
+            waveRad: 25
+            smokeSize: 0
+            smokeSizeBase: 0
+            sparks: 10
+            sparkRad: 25
+            sparkLen: 8
+            sparkStroke: 3
+        }
+        
+        despawnEffect: {
+            type: ExplosionEffect
+            lifetime: 34
+            waveStroke: 4
+            
+            waveColor: 8ca9e8        //techBlue
+            sparkColor: 8ca9e8        //techBlue
+            
+            waveRad: 25
+            smokeSize: 0
+            smokeSizeBase: 0
+            sparks: 10
+            sparkRad: 25
+            sparkLen: 8
+            sparkStroke: 3
+        }
+        
+        splashDamage: 90
+        splashDamageRadius: 20
+        
+        fragBullets: 15
+        fragVelocityMin: 0.5
+        fragRandomSpread: 130
+        fragLifeMin: 0.3
+        despawnShake: 5
+        
+        fragBullet: {
+            type: BasicBulletType
+            speed: 5.5
+            damage: 55
+            
+            pierceCap: 2
+            pierceBuilding: true
+            
+            homingPower: 0.09
+            homingRange: 150
+            
+            lifetime: 50
+            shootEffect: shootBigColor
+            smokeEffect: shootSmokeSquareBig
+            frontColor: ffffff        //white
+            hitSound: none
+            width: 12
+            height: 20
+            
+            lightColor: 8ca9e8        //techBlue
+            trailColor: 8ca9e8        //techBlue
+            hitColor: 8ca9e8        //techBlue
+            backColor: 8ca9e8        //techBlue
+            
+            lightRadius: 40
+            lightOpacity: 0.7
+            
+            trailWidth: 2.2
+            trailLength: 7
+            trailChance: -1
+            
+            despawnEffect: none
+            splashDamage: 50
+            splashDamageRadius: 30
+            
+            hitEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ExplosionEffect
+                        lifetime: 30
+                        waveStroke: 2
+                        
+                        waveColor: 8ca9e8        //techBlue
+                        sparkColor: 8ca9e8        //techBlue
+                        
+                        waveRad: 5
+                        smokeSize: 0
+                        smokeSizeBase: 0
+                        sparks: 5
+                        sparkRad: 20
+                        sparkLen: 6
+                        sparkStroke: 2
+                    }
+                    blastExplosion
+                ]
+            }
+            
+            despawnEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ExplosionEffect
+                        lifetime: 30
+                        waveStroke: 2
+                        
+                        waveColor: 8ca9e8        //techBlue
+                        sparkColor: 8ca9e8        //techBlue
+                        
+                        waveRad: 5
+                        smokeSize: 0
+                        smokeSizeBase: 0
+                        sparks: 5
+                        sparkRad: 20
+                        sparkLen: 6
+                        sparkStroke: 2
+                    }
+                    blastExplosion
+                ]
+            }
+        }
+    }
+}]
+
+alwaysUnlocked: true

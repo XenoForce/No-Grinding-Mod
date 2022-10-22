@@ -23,7 +23,7 @@ weapons: [
     shake: 5
     recoil: 5
     rotate: true
-    rotateSpeed: 0.6
+    rotateSpeed: 0.9
     mirror: false
     x: 0
     y: -2
@@ -150,26 +150,11 @@ weapons: [
         }
         
         
-        //------------------------------------------------------//
-        //  *** Repeat this 12 times: ****                      //
-        //                                                      //
-        // s    = j                                             //
-        // fin  = 0.05 + (j + 1) / 6                            //
-        // life = 40 / Mathf.lerp( fin, 1, 0.5 )                //
-        //                                                      //
-        //                                                      //
-        //   lerp( fromVal, toVal,  progress ) {                //
-        //     = fromVal + (toVal - fromVal) * progress;        //
-        //   }                                                  //
-        //                                                      //
-        //------------------------------------------------------//
-        
-        
         spawnBullets: [
         
         
         //------------------------------------------------------//
-        // *** (1 of 12) ***                                    //
+        // *** (1 of 12) ***                     lifetime: 6    //
         // j = 0                                                //
         // i = -1                                               //
         // s = 0                                                //
@@ -179,12 +164,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 1.7
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.6
+            lifetime: 6
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -222,7 +207,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (2 of 12) ***                                    //
+        // *** (2 of 12) ***                     lifetime: 12   //
         // j = 1                                                //
         // i = -1                                               //
         // s = 1                                                //
@@ -232,12 +217,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 3.1
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.69
+            lifetime: 12
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -275,7 +260,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (3 of 12) ***                                    //
+        // *** (3 of 12) ***                     lifetime: 18   //
         // j = 2                                                //
         // i = -1                                               //
         // s = 2                                                //
@@ -285,12 +270,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 4.4
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.775
+            lifetime: 18
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -328,7 +313,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (4 of 12) ***                                    //
+        // *** (4 of 12) ***                     lifetime: 24   //
         // j = 3                                                //
         // i = -1                                               //
         // s = 3                                                //
@@ -338,12 +323,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 5.7
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.859
+            lifetime: 24
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -381,7 +366,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (5 of 12) ***                                    //
+        // *** (5 of 12) ***                     lifetime: 30   //
         // j = 4                                                //
         // i = -1                                               //
         // s = 4                                                //
@@ -391,12 +376,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 7
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.94
+            lifetime: 30
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -434,7 +419,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (6 of 12) ***                                    //
+        // *** (6 of 12) ***                     lifetime: 36   //
         // j = 5                                                //
         // i = -1                                               //
         // s = 5                                                //
@@ -444,12 +429,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 8.4
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 6
+            lifetime: 36
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -487,7 +472,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (7 of 12) ***                                    //
+        // *** (7 of 12) ***                     lifetime: 6    //
         // j = 0                                                //
         // i = 1                                                //
         // s = 0                                                //
@@ -497,12 +482,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 1.736
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.6
+            lifetime: 6
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -540,7 +525,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (8 of 12) ***                                    //
+        // *** (8 of 12) ***                     lifetime: 12   //
         // j = 1                                                //
         // i = 1                                                //
         // s = 1                                                //
@@ -550,12 +535,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 3.1
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.69
+            lifetime: 12
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -593,7 +578,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (9 of 12) ***                                    //
+        // *** (9 of 12) ***                     lifetime: 18   //
         // j = 2                                                //
         // i = 1                                                //
         // s = 2                                                //
@@ -603,12 +588,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 4.4
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.775
+            lifetime: 18
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -646,7 +631,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (10 of 12) ***                                   //
+        // *** (10 of 12) ***                    lifetime: 24   //
         // j = 3                                                //
         // i = 1                                                //
         // s = 3                                                //
@@ -656,12 +641,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 5.7
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.859
+            lifetime: 24
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -699,7 +684,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (11 of 12) ***                                   //
+        // *** (11 of 12) ***                    lifetime: 30   //
         // j = 4                                                //
         // i = 1                                                //
         // s = 4                                                //
@@ -709,12 +694,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 7.1
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 5.94
+            lifetime: 30
             weaveRandom: false
             hitSize: 5
             pierceCap: 2
@@ -752,7 +737,7 @@ weapons: [
         
         
         //------------------------------------------------------//
-        // *** (12 of 12) ***                                   //
+        // *** (12 of 12) ***                    lifetime: 36   //
         // j = 5                                                //
         // i = 1                                                //
         // s = 5                                                //
@@ -762,12 +747,12 @@ weapons: [
         
         {
             type: BasicBulletType
-            speed: 8.4
+            speed: 8
             damage: 55
             drag: 0.002
             width: 12
             height: 11
-            lifetime: 6
+            lifetime: 36
             weaveRandom: false
             hitSize: 5
             pierceCap: 2

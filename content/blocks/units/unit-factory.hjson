@@ -13,7 +13,7 @@ plans: [
 	{ unit: mega-x       , time: 90, requirements: [] }
 	{ unit: collaris-x   , time: 90, requirements: [] }
 	{ unit: conquer-x    , time: 90, requirements: [] }
-	
+	{ unit: disrupt-x    , time: 90, requirements: [] }
 ]
 
 requirements: []

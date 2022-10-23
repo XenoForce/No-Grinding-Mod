@@ -1,0 +1,176 @@
+type: flying
+name: "Disrupt-X"
+
+// template: ErekirUnitType
+
+// aiController = FlyingFollowAI::new;
+
+outlineColor: 2d2f39
+
+envEnabled: 17
+envDisabled: 0
+
+lowAltitude: false
+flying: true
+drag: 0.07
+speed: 3
+rotateSpeed: 2
+accel: 0.1
+health: 12000
+armor: 7
+hitSize: 46
+
+engineSize: 6
+engineOffset: 25.25
+
+
+// float orbRad  = 5
+// float partRad = 3
+// int   parts   = 10
+
+
+abilities: [
+{
+    type: SuppressionFieldAbility
+    orbRadius: 5
+    particleSize: 3
+    y: 10
+    particles: 10
+}
+{
+    type: SuppressionFieldAbility
+    orbRadius: 5
+    particleSize: 3
+    y: -8
+    x: -11
+    particles: 10
+    display: false
+    active: false
+}
+{
+    type: SuppressionFieldAbility
+    orbRadius: 5
+    particleSize: 3
+    y: -8
+    x: 11
+    particles: 10
+    display: false
+    active: false
+}]
+
+weapons: [
+{
+    type: Weapon
+    name: disrupt-weapon
+    shootSound: missileLarge
+    x: 19.5
+    y: -2.5
+    mirror: true
+    rotate: true
+    rotateSpeed: 0.4
+    reload: 70
+    layerOffset: -20
+    recoil: 1
+    rotationLimit: 22
+    minWarmup: 0.95
+    shootWarmupSpeed: 0.1
+    shootY: 2
+    shootCone: 40
+    
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      shotDelay: 5
+      spread: 0
+    }
+    
+    inaccuracy: 28
+    
+    parts: [
+    {
+        type: RegionPart
+        suffix: "-blade"
+        heatProgress: warmup
+        progress: reload
+        heatColor: 9c50ff
+        x: 1.25
+        y: 0
+        moveRot: -33
+        moveY: -1
+        moveX: -1
+        under: true
+        mirror: true
+    }]
+    
+    bullet: {
+        type: BulletType
+        shootEffect: sparkShoot
+        smokeEffect: shootSmokeTitan
+        hitColor: a3c764
+        shake: 1
+        speed: 0
+        keepVelocity: false
+        spawnUnit: disrupt-x-missile
+    }
+}]
+
+
+
+    /** Sets up engines, mirroring the contents of the specified array. */
+    /*
+    public void setEnginesMirror(UnitEngine... array){
+        for(var base : array){
+            engines.add(base);
+
+            var engine = base.copy();
+            engine.x *= -1;
+            engine.rotation = 180f - engine.rotation;
+            if(engine.rotation < 0) engine.rotation += 360f;
+            engines.add(engine);
+        }
+    }
+    */
+
+
+/*
+setEnginesMirror(
+    new UnitEngine( 95 / 4, -56 / 4, 5, 330 ),      // float x, float y, float radius, float rotation
+    
+    new UnitEngine( 89 / 4, -95 / 4, 4, 315 )
+);
+*/
+
+
+
+engines: [
+{
+    type: UnitEngine
+    x: 23.75
+    y: -14
+    radius: 5
+    rotation: 330
+}
+{
+    type: UnitEngine
+    x: -23.75
+    y: -14
+    radius: 5
+    rotation: 210
+}
+{
+    type: UnitEngine
+    x: 22.25
+    y: -23.75
+    radius: 4
+    rotation: 315
+}
+{
+    type: UnitEngine
+    x: -22.25
+    y: -23.75
+    radius: 4
+    rotation: 225
+}]
+
+
+alwaysUnlocked: true

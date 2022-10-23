@@ -2,66 +2,74 @@ type: missile
 
 template: MissileUnitType
 
+speed: 4.6
+maxRange: 5
+outlineColor: 2d2f39
+health: 70
+homingDelay: 10
+lowAltitude: true
+engineSize: 3
+engineColor: 6d56bf
+trailColor: 6d56bf
+engineLayer: 110
+deathExplosionEffect: none
+loopSoundVolume: 0.1
 
-/*
-        spawnUnit:  = new MissileUnitType("disrupt-missile"){{
-            speed = 4.6f;
-            maxRange = 5f;
-            outlineColor = Pal.darkOutline;
-            health = 70;
-            homingDelay = 10f;
-            lowAltitude = true;
-            engineSize = 3f;
-            engineColor = trailColor = Pal.sapBulletBack;
-            engineLayer = Layer.effect;
-            deathExplosionEffect = Fx.none;
-            loopSoundVolume = 0.1f;
 
-            parts.add(new ShapePart(){{
-                layer = Layer.effect;
-                circle = true;
-                y = -0.25f;
-                radius = 1.5f;
-                color = Pal.suppress;
-                colorTo = Color.white;
-                progress = PartProgress.life.curve(Interp.pow5In);
-            }});
+parts: [
+{
+    type: ShapePart
+    layer: 110
+    circle: true
+    y: -0.25
+    radius: 1.5
+    color: 665c9f
+    colorTo: ffffff
+    progress: life
+}
+{
+    type: RegionPart
+    suffix: "-fin"
+    mirror: true
+    progress: life
+    moveRot: 32
+    rotation: -6
+    moveY: 1.5
+    x: 0.75
+    y: -1.5
+}]
 
-            parts.add(new RegionPart("-fin"){{
-                mirror = true;
-                progress = PartProgress.life.mul(3f).curve(Interp.pow5In);
-                moveRot = 32f;
-                rotation = -6f;
-                moveY = 1.5f;
-                x = 3f / 4f;
-                y = -6f / 4f;
-            }});
 
-            weapons.add(new Weapon(){{
-                shootCone = 360f;
-                mirror = false;
-                reload = 1f;
-                shootOnDeath = true;
-                bullet = new ExplosionBulletType(140f, 25f){{
-                    suppressionRange = 140f;
-                    shootEffect = new ExplosionEffect(){{
-                        lifetime = 50f;
-                        waveStroke = 5f;
-                        waveLife = 8f;
-                        waveColor = Color.white;
-                        sparkColor = smokeColor = Pal.suppress;
-                        waveRad = 40f;
-                        smokeSize = 4f;
-                        smokes = 7;
-                        smokeSizeBase = 0f;
-                        sparks = 10;
-                        sparkRad = 40f;
-                        sparkLen = 6f;
-                        sparkStroke = 2f;
-                    }};
-                }};
-            }});
-        }};
+weapons: [
+{
+    type: Weapon
+    shootCone: 360
+    mirror: false
+    reload: 1
+    shootOnDeath: true
+    
+    bullet: {
+        type: ExplosionBulletType
+        splashDamage: 140
+        splashDamageRadius: 25
+        suppressionRange: 140
         
-        
-*/
+        shootEffect: {
+            type: ExplosionEffect
+            lifetime: 50
+            waveStroke: 5
+            waveLife: 8
+            waveColor: ffffff
+            sparkColor: 665c9f
+            smokeColor: 665c9f
+            waveRad: 40
+            smokeSize: 4
+            smokes: 7
+            smokeSizeBase: 0
+            sparks: 10
+            sparkRad: 40
+            sparkLen: 6
+            sparkStroke: 2
+        }
+    }
+}]

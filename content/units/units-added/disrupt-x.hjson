@@ -61,7 +61,7 @@ abilities: [
 weapons: [
 {
     type: Weapon
-    name: disrupt-weapon
+    name: disrupt-x-weapon
     shootSound: missileLarge
     x: 19.5
     y: -2.5
@@ -76,6 +76,7 @@ weapons: [
     shootWarmupSpeed: 0.1
     shootY: 2
     shootCone: 40
+    shake: 1
     
     shoot: {
       type: ShootSpread
@@ -107,7 +108,6 @@ weapons: [
         shootEffect: sparkShoot
         smokeEffect: shootSmokeTitan
         hitColor: a3c764
-        shake: 1
         speed: 0
         keepVelocity: false
         spawnUnit: disrupt-x-missile

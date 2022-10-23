@@ -19,14 +19,8 @@ accel: 0.1
 health: 12000
 armor: 7
 hitSize: 46
-
 engineSize: 6
 engineOffset: 25.25
-
-
-// float orbRad  = 5
-// float partRad = 3
-// int   parts   = 10
 
 
 abilities: [
@@ -57,6 +51,7 @@ abilities: [
     display: false
     active: false
 }]
+
 
 weapons: [
 {
@@ -107,39 +102,12 @@ weapons: [
         type: BulletType
         shootEffect: sparkShoot
         smokeEffect: shootSmokeTitan
-        hitColor: a3c764
+        hitColor: 665c9f
         speed: 0
         keepVelocity: false
         spawnUnit: disrupt-x-missile
     }
 }]
-
-
-
-    /** Sets up engines, mirroring the contents of the specified array. */
-    /*
-    public void setEnginesMirror(UnitEngine... array){
-        for(var base : array){
-            engines.add(base);
-
-            var engine = base.copy();
-            engine.x *= -1;
-            engine.rotation = 180f - engine.rotation;
-            if(engine.rotation < 0) engine.rotation += 360f;
-            engines.add(engine);
-        }
-    }
-    */
-
-
-/*
-setEnginesMirror(
-    new UnitEngine( 95 / 4, -56 / 4, 5, 330 ),      // float x, float y, float radius, float rotation
-    
-    new UnitEngine( 89 / 4, -95 / 4, 4, 315 )
-);
-*/
-
 
 
 engines: [

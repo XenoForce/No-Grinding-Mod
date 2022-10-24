@@ -1,8 +1,12 @@
 type: legs
 name: Collaris-X
-            
-outlineColor: 2d2f39        //darkOutline
 
+buildSpeed: 9900.0
+itemCapacity: 900
+
+fogRadius: 90
+
+outlineColor: 2d2f39        //darkOutline
 drag: 0.1
 speed: 1.3
 hitSize: 44

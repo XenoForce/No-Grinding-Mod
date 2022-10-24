@@ -3,6 +3,11 @@ name: "Conquer-X"
 
 template: TankUnitType
 
+buildSpeed: 9900.0
+itemCapacity: 900
+
+fogRadius: 90
+
 hitSize: 46
 treadPullOffset: 1
 speed: 1.3

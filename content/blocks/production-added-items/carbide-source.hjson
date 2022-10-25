@@ -7,7 +7,7 @@ itemCapacity: 50
 
 outputItem: {
   item: carbide
-  amount: 9
+  amount: 90
 }
 
 size: 1
@@ -24,6 +24,8 @@ requirements: []
 buildCostMultiplier: 0.1
 
 category: crafting
-research: oxide-source
 
-alwaysUnlocked: true
+research: {
+  parent: oxide-source
+  requirements: [ carbide/10 ]
+}

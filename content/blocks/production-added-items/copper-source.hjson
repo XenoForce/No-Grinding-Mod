@@ -3,12 +3,9 @@ name: Copper Source
 description: Copper Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: copper
-  amount: 90
-}
+outputItem: copper/90
 
 size: 1
 

@@ -3,12 +3,9 @@ name: Spore Pod Source
 description: Spore Pod Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: spore-pod
-  amount: 9
-}
+outputItem: spore-pod/90
 
 size: 1
 
@@ -24,6 +21,8 @@ requirements: []
 buildCostMultiplier: 0.1
 
 category: crafting
-research: coal-source
 
-alwaysUnlocked: true
+research: {
+  parent: metaglass-source
+  requirements: [ spore-pod/40 ]
+}

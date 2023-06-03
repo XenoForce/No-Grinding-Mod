@@ -3,12 +3,9 @@ name: Lead Source
 description: Lead Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: lead
-  amount: 90
-}
+outputItem: lead/90
 
 size: 1
 

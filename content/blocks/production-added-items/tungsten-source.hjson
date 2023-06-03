@@ -3,12 +3,9 @@ name: Tungsten Source
 description: Tungsten Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: tungsten
-  amount: 90
-}
+outputItem: tungsten/90
 
 size: 1
 

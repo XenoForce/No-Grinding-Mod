@@ -3,12 +3,9 @@ name: Phase Fabric Source
 description: Phase Fabric Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: phase-fabric
-  amount: 90
-}
+outputItem: phase-fabric/90
 
 size: 1
 

@@ -3,12 +3,9 @@ name: Beryllium Source
 description: Beryllium Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: beryllium
-  amount: 90
-}
+outputItem: beryllium/90
 
 size: 1
 
@@ -26,6 +23,6 @@ buildCostMultiplier: 0.1
 category: crafting
 
 research: {
-  parent: breach
-  requirements: [ beryllium/100 ]
+  parent: core-bastion
+  requirements: [ beryllium/10 ]
 }

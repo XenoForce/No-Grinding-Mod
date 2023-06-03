@@ -3,12 +3,9 @@ name: Thorium Source
 description: Thorium Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: thorium
-  amount: 90
-}
+outputItem: thorium/90
 
 size: 1
 

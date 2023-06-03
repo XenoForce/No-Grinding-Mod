@@ -3,12 +3,9 @@ name: Graphite Source
 description: Graphite Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: graphite
-  amount: 90
-}
+outputItem: graphite/90
 
 size: 1
 

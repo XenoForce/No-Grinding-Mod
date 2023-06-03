@@ -3,12 +3,9 @@ name: Plastanium Source
 description: Plastanium Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: plastanium
-  amount: 90
-}
+outputItem: plastanium/90
 
 size: 1
 

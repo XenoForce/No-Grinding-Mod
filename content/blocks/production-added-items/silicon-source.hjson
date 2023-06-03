@@ -3,12 +3,9 @@ name: Silicon Source
 description: Silicon Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: silicon
-  amount: 90
-}
+outputItem: silicon/90
 
 size: 1
 

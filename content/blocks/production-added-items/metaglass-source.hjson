@@ -3,12 +3,9 @@ name: Metaglass Source
 description: Metaglass Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: metaglass
-  amount: 90
-}
+outputItem: metaglass/90
 
 size: 1
 

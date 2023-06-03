@@ -3,12 +3,9 @@ name: Oxide Source
 description: Oxide Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: oxide
-  amount: 90
-}
+outputItem: oxide/90
 
 size: 1
 

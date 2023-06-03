@@ -3,12 +3,9 @@ name: Surge Alloy Source
 description: Surge Alloy Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: surge-alloy
-  amount: 90
-}
+outputItem: surge-alloy/90
 
 size: 1
 

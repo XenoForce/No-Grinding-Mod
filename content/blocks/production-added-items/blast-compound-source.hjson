@@ -3,12 +3,9 @@ name: Blast Compound Source
 description: Blast Compound Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: blast-compound
-  amount: 90
-}
+outputItem: blast-compound/90
 
 size: 1
 

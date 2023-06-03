@@ -3,12 +3,9 @@ name: Pyratite Source
 description: Pyratite Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: pyratite
-  amount: 90
-}
+outputItem: pyratite/90
 
 size: 1
 

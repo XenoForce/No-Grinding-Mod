@@ -3,12 +3,9 @@ name: Carbide Source
 description: Carbide Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: carbide
-  amount: 90
-}
+outputItem: carbide/90
 
 size: 1
 

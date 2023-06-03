@@ -3,12 +3,9 @@ name: Scrap Source
 description: Scrap Source
 
 health: 99000
-itemCapacity: 50
+itemCapacity: 500
 
-outputItem: {
-  item: scrap
-  amount: 9
-}
+outputItem: scrap/90
 
 size: 1
 
@@ -24,6 +21,8 @@ requirements: []
 buildCostMultiplier: 0.1
 
 category: crafting
-research: happy-times-mod-logo
 
-alwaysUnlocked: true
+research: {
+  parent: lead-source
+  requirements: [ scrap/40 ]
+}

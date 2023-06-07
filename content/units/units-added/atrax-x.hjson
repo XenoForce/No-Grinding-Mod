@@ -1,0 +1,63 @@
+type: legs
+name: "Atrax-X"
+
+// template: LegUnitType
+
+buildSpeed: 900
+itemCapacity: 90
+
+envEnabled: 17
+envDisabled: 0
+
+fogRadius: 90
+
+speed: 1.3
+drag: 0.1
+hitSize: 13
+rotateSpeed: 3
+targetAir: true
+health: 22000
+
+immunities: [
+    burning
+    melting
+]
+
+legCount: 4
+legLength: 9
+legForwardScl: 0.6
+legMoveSpace: 1.4
+hovering: true
+armor: 30
+
+// ammoType: coal
+
+shadowElevation: 0.2
+
+// groundLayer = Layer.legUnit - 1
+
+
+weapons: [
+{
+    type: Weapon
+    name: atrax-x-weapon
+    top: false
+    shootY: 3
+    reload: 9
+    ejectEffect: none
+    recoil: 1
+    x: 7
+    shootSound: flame
+    
+    bullet: {
+        type: BasicBulletType
+        damage: 3900
+        speed: 2.5
+        drag: 0
+        shootEffect: shootSmall
+        lifetime: 280
+        collidesAir: true
+    }
+}]
+
+alwaysUnlocked: true

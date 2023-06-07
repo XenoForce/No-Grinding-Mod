@@ -9,11 +9,12 @@ itemCapacity: 30
 consumes: {}
 
 plans: [
-	{ unit: poly-x       , time: 90, requirements: [] }
-	{ unit: mega-x       , time: 90, requirements: [] }
-	{ unit: collaris-x   , time: 90, requirements: [] }
-	{ unit: conquer-x    , time: 90, requirements: [] }
-	{ unit: disrupt-x    , time: 90, requirements: [] }
+	{ unit: poly-x       , time: 120, requirements: [] }
+	{ unit: mega-x       , time: 120, requirements: [] }
+	{ unit: collaris-x   , time: 120, requirements: [] }
+	{ unit: conquer-x    , time: 120, requirements: [] }
+	{ unit: disrupt-x    , time: 120, requirements: [] }
+	{ unit: atrax-x      , time: 120, requirements: [] }
 ]
 
 requirements: []

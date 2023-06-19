@@ -1,0 +1,6 @@
+health: 400
+
+maxNodes: 40
+laserRange: 16
+
+requirements: [ copper/1 ]

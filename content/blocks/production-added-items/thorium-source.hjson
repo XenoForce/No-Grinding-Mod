@@ -23,6 +23,6 @@ buildCostMultiplier: 0.1
 category: crafting
 
 research: {
-  parent: plastanium-source
+  parent: titanium-source
   requirements: [ thorium/10 ]
 }

@@ -20,7 +20,7 @@ consumes: {
 requirements: []
 buildCostMultiplier: 0.1
 
-category: crafting
+category: logic
 
 research: {
   parent: lead-source

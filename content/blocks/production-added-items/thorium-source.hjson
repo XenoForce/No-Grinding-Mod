@@ -20,9 +20,9 @@ consumes: {
 requirements: []
 buildCostMultiplier: 0.1
 
-category: crafting
+category: logic
 
 research: {
-  parent: titanium-source
+  parent: silicon-source
   requirements: [ thorium/10 ]
 }

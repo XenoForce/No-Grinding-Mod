@@ -11,10 +11,10 @@ solid: true
 group: transportation
 configurable: true
 
-requirements: [ copper/1 ]
+requirements: []
 buildCostMultiplier: 0.1
 
-category: effect
+category: logic
 research: power-source-x
 
 alwaysUnlocked: true

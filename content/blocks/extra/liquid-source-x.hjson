@@ -11,7 +11,7 @@ outputsLiquid: true
 group: transportation
 configurable: true
 
-requirements: [ copper/1 ]
+requirements: []
 buildCostMultiplier: 0.1
 
 category: liquid

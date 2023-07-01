@@ -20,9 +20,9 @@ consumes: {
 requirements: []
 buildCostMultiplier: 0.1
 
-category: crafting
+category: logic
 
 research: {
-  parent: graphite-source
+  parent: lead-source
   requirements: [ metaglass/10 ]
 }

@@ -1,0 +1,174 @@
+type: ItemTurret
+name: "Salvo X"
+
+size: 2
+
+health: 960
+range: 190
+reload: 31
+ammoEjectBack: 3
+recoil: 3
+shake: 1
+
+shoot: {
+  type: ShootSpread
+  spread: 0
+  shots: 4
+  shotDelay: 3
+}
+
+ammoUseEffect: casing2
+shootSound: shootBig
+
+category: turret
+
+requirements: [
+  copper/40
+  lead/40
+]
+
+research: {
+  parent: duo
+  requirements: [
+    copper/40
+    lead/40
+  ]
+}
+
+
+ammoTypes: {
+  copper: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+  lead: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+  scrap: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+  titanium: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+  thorium: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+  coal: {
+    type: BasicBulletType
+    speed: 4
+    damage: 24
+    sprite: bullet
+    width: 9
+    height: 12
+    lifetime: 60
+    ammoMultiplier: 5
+    splashDamage: 10
+    splashDamageRadius: 22
+  }
+  
+}
+
+
+/*
+Example Template:
+
+  copper: {
+    type: BasicBulletType
+    speed: 4     (or 3.5 or 2.5)
+    damage: 32
+    
+    sprite: bullet
+    width: 7     (or  9  or 10  or 10)
+    height: 9    (or 12  or 12  or 13)
+    lifetime: 60
+    ammoMultiplier: 5
+    
+    splashDamage: 12
+    splashDamageRadius: 22
+  }
+
+*/
+
+
+/*
+Orig Java code:
+
+            ammo(
+                Items.pyratite, new BasicBulletType(){{
+                    frontColor = Pal.lightishOrange;
+                    backColor  = Pal.lightOrange;
+                    
+                    status: burning
+                    
+                    hitEffect = new MultiEffect( Fx.hitBulletSmall, Fx.fireHit );
+
+                    splashDamage: 12
+                    splashDamageRadius: 22
+
+                    makeFire: true
+                }},
+                
+                Items.silicon, new BasicBulletType(3f, 15, "bullet"){{
+                    sprite: bullet
+                    homingPower: 0.1
+                    reloadMultiplier: 1.5
+                }},
+                
+                
+                Items.thorium, new BasicBulletType(4f, 29, "bullet"){{
+                    sprite: bullet
+                    shootEffect: shootBig
+                    smokeEffect: shootBigSmoke
+                }}
+            );
+
+*/

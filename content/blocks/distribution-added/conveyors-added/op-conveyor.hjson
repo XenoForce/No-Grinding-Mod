@@ -1,0 +1,21 @@
+type: Conveyor
+name: "Opore Conveyor"
+
+health: 80
+
+speed: 0.15
+
+category: distribution
+
+requirements: [
+    copper/2
+    lead/2
+]
+
+research: {
+  parent: conveyor
+  requirements: [
+    copper/20
+    lead/20
+  ]
+}

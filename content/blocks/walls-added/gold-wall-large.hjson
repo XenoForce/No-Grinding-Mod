@@ -1,0 +1,15 @@
+type: Wall
+name: "Large Gold Wall"
+
+size: 2
+
+health: 1280
+
+category: defense
+
+requirements: [ copper/24 ]
+
+research: {
+  parent: gold-wall
+  requirements: [ copper/40 ]
+}

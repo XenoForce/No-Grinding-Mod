@@ -1,0 +1,15 @@
+type: Wall
+name: "Gold Wall"
+
+size: 1
+
+health: 320
+
+category: defense
+
+requirements: [ copper/6 ]
+
+research: {
+  parent: copper-wall
+  requirements: [ copper/20 ]
+}

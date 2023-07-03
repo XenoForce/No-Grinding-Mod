@@ -7,15 +7,9 @@ speed: 0.15
 
 category: distribution
 
-requirements: [
-    copper/2
-    lead/2
-]
+requirements: [ copper/1 ]
 
 research: {
   parent: conveyor
-  requirements: [
-    copper/20
-    lead/20
-  ]
+  requirements: [ copper/3 ]
 }

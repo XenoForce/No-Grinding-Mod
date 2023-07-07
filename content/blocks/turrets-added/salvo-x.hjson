@@ -28,7 +28,7 @@ requirements: [
 ]
 
 research: {
-  parent: duo
+  parent: no-grinding-mod-logo
   requirements: [
     copper/40
     lead/40

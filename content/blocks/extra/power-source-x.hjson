@@ -14,8 +14,8 @@ buildCostMultiplier: 0.1
 category: power
 
 research: {
-  parent: lead-source
-  requirements: [ coal/10 ]
+  parent: no-grinding-mod-logo
+  requirements: [ copper/10 ]
 }
 
-alwaysUnlocked: true
+alwaysUnlocked: false

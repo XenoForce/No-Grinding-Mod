@@ -10,6 +10,6 @@ category: distribution
 requirements: [ copper/1 ]
 
 research: {
-  parent: conveyor
+  parent: no-grinding-mod-logo
   requirements: [ copper/3 ]
 }

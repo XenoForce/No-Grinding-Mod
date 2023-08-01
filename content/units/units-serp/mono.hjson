@@ -4,3 +4,11 @@ mineSpeed: 4
 itemCapacity: 100
 
 speed: 2.9
+
+mineItems: [
+	copper
+	lead
+	coal
+	titanium
+	thorium
+]

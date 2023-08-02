@@ -1,0 +1,28 @@
+type: flying
+flying: true
+name: "Coal Miner"
+
+controller: {
+  type: MinerAI
+}
+
+defaultCommand: mine
+
+mineItems: [
+	coal
+]
+
+mineTier: 4
+mineSpeed: 4
+itemCapacity: 100
+
+health: 7000
+speed: 2.9
+drag: 0.06
+accel: 0.12
+engineSize: 1.8
+engineOffset: 5.7
+range: 50
+isEnemy: false
+
+alwaysUnlocked: true

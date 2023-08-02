@@ -25,4 +25,5 @@ engineOffset: 5.7
 range: 50
 isEnemy: false
 
+research: unit-factory
 alwaysUnlocked: true

@@ -18,4 +18,4 @@ research: {
   requirements: [ copper/10 ]
 }
 
-alwaysUnlocked: false
+alwaysUnlocked: true

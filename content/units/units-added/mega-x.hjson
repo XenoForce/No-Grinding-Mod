@@ -69,4 +69,5 @@ weapons: [
     }
 }]
 
+research: poly-x
 alwaysUnlocked: true

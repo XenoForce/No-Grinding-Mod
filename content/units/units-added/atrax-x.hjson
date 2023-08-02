@@ -60,4 +60,5 @@ weapons: [
     }
 }]
 
+research: disrupt-x
 alwaysUnlocked: true

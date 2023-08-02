@@ -813,4 +813,5 @@ parts: [
     outline: false
 }]
 
+research: collaris-x
 alwaysUnlocked: true

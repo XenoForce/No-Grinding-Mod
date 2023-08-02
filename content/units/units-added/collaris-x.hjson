@@ -269,4 +269,5 @@ weapons: [
     }
 }]
 
+research: mega-x
 alwaysUnlocked: true

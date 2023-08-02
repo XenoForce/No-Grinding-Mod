@@ -15,6 +15,7 @@ plans: [
 	{ unit: sand-miner      , time: 180, requirements: [] }
 	{ unit: titanium-miner  , time: 180, requirements: [] }
 	{ unit: thorium-miner   , time: 180, requirements: [] }
+	{ unit: scrap-miner     , time: 180, requirements: [] }
 	
 	{ unit: poly-x          , time: 180, requirements: [] }
 	{ unit: mega-x          , time: 180, requirements: [] }

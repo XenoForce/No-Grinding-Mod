@@ -9,17 +9,18 @@ itemCapacity: 30
 consumes: {}
 
 plans: [
-	{ unit: copper-miner , time: 180, requirements: [] }
-	{ unit: lead-miner   , time: 180, requirements: [] }
-	{ unit: coal-miner   , time: 180, requirements: [] }
-	{ unit: sand-miner   , time: 180, requirements: [] }
+	{ unit: copper-miner    , time: 180, requirements: [] }
+	{ unit: lead-miner      , time: 180, requirements: [] }
+	{ unit: coal-miner      , time: 180, requirements: [] }
+	{ unit: sand-miner      , time: 180, requirements: [] }
+	{ unit: titanium-miner  , time: 180, requirements: [] }
 	
-	{ unit: poly-x       , time: 180, requirements: [] }
-	{ unit: mega-x       , time: 180, requirements: [] }
-	{ unit: collaris-x   , time: 180, requirements: [] }
-	{ unit: conquer-x    , time: 180, requirements: [] }
-	{ unit: disrupt-x    , time: 180, requirements: [] }
-	{ unit: atrax-x      , time: 180, requirements: [] }
+	{ unit: poly-x          , time: 180, requirements: [] }
+	{ unit: mega-x          , time: 180, requirements: [] }
+	{ unit: collaris-x      , time: 180, requirements: [] }
+	{ unit: conquer-x       , time: 180, requirements: [] }
+	{ unit: disrupt-x       , time: 180, requirements: [] }
+	{ unit: atrax-x         , time: 180, requirements: [] }
 ]
 
 requirements: []

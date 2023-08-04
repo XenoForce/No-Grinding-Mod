@@ -29,5 +29,5 @@ research: {
 		lead/50
 		silicon/20
 	]
-	parent: mender-x
+	parent: mend-beacon-x
 }

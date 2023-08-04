@@ -1,0 +1,20 @@
+type: PowerNode
+name: "Power Node X"
+
+health: 400
+
+maxNodes: 40
+laserRange: 16
+
+category: power
+
+requirements: [
+	copper/1
+]
+
+research: {
+	requirements: [
+		copper/5
+	]
+	parent: no-grinding-mod-logo
+}

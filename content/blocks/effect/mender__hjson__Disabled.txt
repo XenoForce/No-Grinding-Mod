@@ -1,7 +1,0 @@
-health: 400
-range: 100
-
-healPercent: 10
-useTime: 60
-
-requirements: [ copper/1 ]

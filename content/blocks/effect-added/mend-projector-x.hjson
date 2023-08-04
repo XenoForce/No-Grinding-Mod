@@ -1,0 +1,32 @@
+type: MendProjector
+name: "Mend Projector X"
+
+size: 2
+
+health: 480
+
+hasPower: true
+healPercent: 25
+range: 105
+reload: 120
+
+consumes: {
+	power: 1.0
+}
+
+category: effect
+
+requirements: [
+	copper/60
+	lead/50
+	silicon/20
+]
+
+research: {
+	requirements: [
+		copper/60
+		lead/50
+		silicon/20
+	]
+	parent: mender-x
+}

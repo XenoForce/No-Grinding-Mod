@@ -1,0 +1,30 @@
+type: MendProjector
+name: "Mender X"
+
+size: 1
+
+health: 180
+
+hasPower: true
+healPercent: 15
+range: 65
+reload: 120
+
+consumes: {
+	power: 0.3
+}
+
+category: effect
+
+requirements: [
+	copper/20
+	lead/20
+]
+
+research: {
+	requirements: [
+		copper/20
+		lead/20
+	]
+	parent: no-grinding-mod-logo
+}

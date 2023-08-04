@@ -9,6 +9,7 @@ hasPower: true
 healPercent: 15
 range: 65
 reload: 120
+phaseColor: "2244ee"
 
 consumes: {
 	power: 0.3
